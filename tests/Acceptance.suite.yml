@@ -8,6 +8,8 @@ modules:
     enabled:
         - WebDriver:
             url: https://sdet.wpforms.wpfc.io/
+            host: '127.0.0.1'
+            port: '4444'   
             browser: chrome
         
 parameters:
