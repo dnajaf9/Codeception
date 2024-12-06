@@ -10,3 +10,5 @@ modules:
     enabled:
         # add a framework module here
 step_decorators: ~
+paths:
+  tests: tests/Acceptance

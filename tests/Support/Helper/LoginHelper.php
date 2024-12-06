@@ -34,15 +34,7 @@ trait LoginHelper
         $I->switchToIFrame('editor-canvas');
         $I->waitForElement($this->title, 10);
         $I->fillField($this->title, $title);
-        
 
-        
-
-        // $I->switchToIFrame(); // Switch back from the iframe
-        // $I->wait(3);
-        // $I->click(['id' => 'tabs-0-edit-post/block']);
-        
-        // $I->switchToIFrame('editor-canvas');
         $locator = 'div.is-root-container p[contenteditable="true"]';
         // Use executeJS to send text to the contenteditable element
 $I->executeJS("
