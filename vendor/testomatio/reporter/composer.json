@@ -1,0 +1,21 @@
+{
+    "name": "testomatio/reporter",
+    "description": "Testomat.io reporter for PHPUnit & Codeception",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Bodnarchuk",
+            "email": "davert@sdclabs.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "nategood/httpful": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Testomatio\\Reporter\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+I WANT TO LOGIN
+
+I see 'Username or Email Address' 
+I fill field "$this->usernameField"," $username" 
+I fill field "$this->passwordField"," $password" 
+I click "$this->loginButton" 
+I see 'Dashboard'
+

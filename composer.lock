@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a1b242143b19f0f0854c3569509158d",
+    "content-hash": "2f4c3aa9c125aec0a788f72f5d8b502e",
     "packages": [],
     "packages-dev": [
         {
@@ -960,6 +960,53 @@
             "time": "2024-07-18T11:15:46+00:00"
         },
         {
+            "name": "jetbrains/phpstorm-stubs",
+            "version": "v2024.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JetBrains/phpstorm-stubs.git",
+                "reference": "cf7e447ddfa7f0cbab0c1dd38392f0cb05f9881c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JetBrains/phpstorm-stubs/zipball/cf7e447ddfa7f0cbab0c1dd38392f0cb05f9881c",
+                "reference": "cf7e447ddfa7f0cbab0c1dd38392f0cb05f9881c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "v3.46.0",
+                "nikic/php-parser": "v5.0.0",
+                "phpdocumentor/reflection-docblock": "5.3.0",
+                "phpunit/phpunit": "10.5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "PhpStormStubsMap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "PHP runtime & extensions header files for PhpStorm",
+            "homepage": "https://www.jetbrains.com/phpstorm",
+            "keywords": [
+                "autocomplete",
+                "code",
+                "inference",
+                "inspection",
+                "jetbrains",
+                "phpstorm",
+                "stubs",
+                "type"
+            ],
+            "support": {
+                "source": "https://github.com/JetBrains/phpstorm-stubs/tree/v2024.2"
+            },
+            "time": "2024-06-17T19:18:18+00:00"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.9.0",
             "source": {
@@ -1085,6 +1132,60 @@
                 }
             ],
             "time": "2024-11-08T17:47:46+00:00"
+        },
+        {
+            "name": "nategood/httpful",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nategood/httpful.git",
+                "reference": "ea02c8aedef70b9a453ce97978d9d7c413972f15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nategood/httpful/zipball/ea02c8aedef70b9a453ce97978d9d7c413972f15",
+                "reference": "ea02c8aedef70b9a453ce97978d9d7c413972f15",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Httpful": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nate Good",
+                    "email": "me@nategood.com",
+                    "homepage": "http://nategood.com"
+                }
+            ],
+            "description": "A Readable, Chainable, REST friendly, PHP HTTP Client",
+            "homepage": "http://github.com/nategood/httpful",
+            "keywords": [
+                "api",
+                "curl",
+                "http",
+                "requests",
+                "rest",
+                "restful"
+            ],
+            "support": {
+                "issues": "https://github.com/nategood/httpful/issues",
+                "source": "https://github.com/nategood/httpful/tree/v1.0.0"
+            },
+            "time": "2024-05-01T11:33:16+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2138,6 +2239,75 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+            "name": "roave/better-reflection",
+            "version": "6.44.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Roave/BetterReflection.git",
+                "reference": "6ff8860687ac93ba00384005fcba52e3e400aac1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Roave/BetterReflection/zipball/6ff8860687ac93ba00384005fcba52e3e400aac1",
+                "reference": "6ff8860687ac93ba00384005fcba52e3e400aac1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "jetbrains/phpstorm-stubs": "2024.2",
+                "nikic/php-parser": "^5.3.1",
+                "php": "~8.2.0 || ~8.3.2 || ~8.4.1"
+            },
+            "conflict": {
+                "thecodingmachine/safe": "<1.1.3"
+            },
+            "require-dev": {
+                "phpbench/phpbench": "^1.3.1",
+                "phpunit/phpunit": "^11.4.3"
+            },
+            "suggest": {
+                "composer/composer": "Required to use the ComposerSourceLocator"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Roave\\BetterReflection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Titcumb",
+                    "email": "james@asgrim.com",
+                    "homepage": "https://github.com/asgrim"
+                },
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "https://ocramius.github.io/"
+                },
+                {
+                    "name": "Gary Hockin",
+                    "email": "gary@roave.com",
+                    "homepage": "https://github.com/geeh"
+                },
+                {
+                    "name": "Jaroslav Hanslík",
+                    "email": "kukulich@kukulich.cz",
+                    "homepage": "https://github.com/kukulich"
+                }
+            ],
+            "description": "Better Reflection - an improved code reflection API",
+            "support": {
+                "issues": "https://github.com/Roave/BetterReflection/issues",
+                "source": "https://github.com/Roave/BetterReflection/tree/6.44.0"
+            },
+            "time": "2024-12-02T14:26:42+00:00"
+        },
+        {
             "name": "sebastian/cli-parser",
             "version": "3.0.2",
             "source": {
@@ -3059,6 +3229,72 @@
                 }
             ],
             "time": "2024-10-09T05:16:32+00:00"
+        },
+        {
+            "name": "spatie/emoji",
+            "version": "4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/emoji.git",
+                "reference": "80b13c39c350c106ce0f95f15d65d2a280b0836a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/emoji/zipball/80b13c39c350c106ce0f95f15d65d2a280b0836a",
+                "reference": "80b13c39c350c106ce0f95f15d65d2a280b0836a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "ext-iconv": "*",
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.0",
+                "pestphp/pest": "^1.22",
+                "symfony/console": "^6.2",
+                "twig/twig": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Emoji\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Display emoji characters",
+            "homepage": "https://github.com/spatie/emoji",
+            "keywords": [
+                "emoji",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/emoji/issues",
+                "source": "https://github.com/spatie/emoji/tree/4.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-07T06:58:20+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -4343,6 +4579,107 @@
                 }
             ],
             "time": "2024-10-23T06:56:12+00:00"
+        },
+        {
+            "name": "testomatio/list-tests",
+            "version": "0.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/testomatio/php-list-tests.git",
+                "reference": "d8736819098b0d05a2d268b1f76378ea084ef8ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/testomatio/php-list-tests/zipball/d8736819098b0d05a2d268b1f76378ea084ef8ba",
+                "reference": "d8736819098b0d05a2d268b1f76378ea084ef8ba",
+                "shasum": ""
+            },
+            "require": {
+                "nategood/httpful": "^1.0",
+                "roave/better-reflection": "^6.0",
+                "spatie/emoji": "^4.1",
+                "symfony/console": ">3.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^4.2",
+                "codeception/module-asserts": "^1.0.0",
+                "codeception/module-cli": "^1.0",
+                "codeception/module-filesystem": "^1.0",
+                "hoa/console": "^3.17",
+                "testomatio/reporter": "0.1.1"
+            },
+            "bin": [
+                "list-tests"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Testomatio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Bodnarchuk",
+                    "email": "davert@sdclabs.com",
+                    "homepage": "https://testomat.io"
+                }
+            ],
+            "description": "Tests preview & import for PHPUnit & Codeception tests",
+            "homepage": "https://testomat.io/",
+            "keywords": [
+                "TDD",
+                "static analysis",
+                "tests"
+            ],
+            "support": {
+                "issues": "https://github.com/testomatio/php-list-tests/issues",
+                "source": "https://github.com/testomatio/php-list-tests/tree/0.2.5"
+            },
+            "time": "2024-11-11T10:26:02+00:00"
+        },
+        {
+            "name": "testomatio/reporter",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/testomatio/php-reporter.git",
+                "reference": "bf437a7069f7849fd5a56898a3d9bb35e632779c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/testomatio/php-reporter/zipball/bf437a7069f7849fd5a56898a3d9bb35e632779c",
+                "reference": "bf437a7069f7849fd5a56898a3d9bb35e632779c",
+                "shasum": ""
+            },
+            "require": {
+                "nategood/httpful": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Testomatio\\Reporter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Bodnarchuk",
+                    "email": "davert@sdclabs.com"
+                }
+            ],
+            "description": "Testomat.io reporter for PHPUnit & Codeception",
+            "support": {
+                "issues": "https://github.com/testomatio/php-reporter/issues",
+                "source": "https://github.com/testomatio/php-reporter/tree/1.0.0"
+            },
+            "time": "2024-10-21T18:27:56+00:00"
         },
         {
             "name": "theseer/tokenizer",

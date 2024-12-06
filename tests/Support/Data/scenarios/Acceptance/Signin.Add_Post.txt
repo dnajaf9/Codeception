@@ -1,0 +1,12 @@
+I WANT TO ADD POST
+
+I am on page '/admin' 
+I am on page '/wp-admin/edit.php' 
+I see in title 'Posts' 
+I switch to i frame '.block-editor-iframe__html' 
+I scroll to "['css' => 'p.block-editor-block-list__layout']" 
+I click "['id' => '#block-b1c7aea4-ef9c-4622-83a5-6eccee5a6e96']" 
+I switch to i frame "" 
+I see 'Save' 
+I click "['name' => 'Save']"
+

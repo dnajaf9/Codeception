@@ -1,0 +1,13 @@
+namespace: Testomatio
+suites:
+    unit:
+        path: .
+
+settings:
+    shuffle: true
+    lint: true
+paths:
+    tests: .
+    output: .
+    support: .
+    data: .

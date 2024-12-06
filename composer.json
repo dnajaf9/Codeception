@@ -3,7 +3,10 @@
         "codeception/codeception": "^5.1",
         "codeception/module-phpbrowser": "*",
         "codeception/module-asserts": "*",
+        "license": "proprietary",
         "codeception/module-db": "^3.1",
-        "codeception/module-webdriver": "^4.0"
+        "codeception/module-webdriver": "^4.0",
+        "testomatio/list-tests": "^0.2.5",
+        "testomatio/reporter": "^1.0"
     }
 }

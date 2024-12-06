@@ -1,0 +1,20 @@
+I WANT TO ADD NEW POST
+
+I click 'Add New Post' 
+I see in title 'Add New Post' 
+I wait "3" 
+I switch to i frame 'editor-canvas' 
+I wait for element "$this->title"," 10" 
+I fill field "$this->title"," $title" 
+I switch to i frame "" 
+I wait "3" 
+I click "['id' => 'tabs-0-edit-post/block']" 
+I switch to i frame 'editor-canvas' 
+I click '.block-editor-rich-text__editable.rich-text' 
+I fill field '.block-editor-rich-text__editable.rich-text'," "Post content"" 
+I click('//button[@type="button" and text ")="Publish" and @aria-expanded="false"]' 
+I wait "3" 
+I switch to i frame "" 
+I click 'div[class="editor-post-publish-panel__header-publish-button"] button[type="button"]' 
+I wait "3"
+

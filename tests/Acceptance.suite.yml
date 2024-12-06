@@ -9,6 +9,13 @@ modules:
         - WebDriver:
             url: https://sdet.wpforms.wpfc.io/
             browser: chrome
+        
+parameters:
+    username: 'admin'
+    password: 'sh43YJ7OmfrQElqIFlNX2WVB'
+
+
+        
        
 # Add Codeception\Step\Retry trait to AcceptanceTester to enable retries
 step_decorators:
