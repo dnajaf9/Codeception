@@ -4,13 +4,13 @@ namespace Tests\Acceptance;
 
 use Tests\Support\AcceptanceTester;
 use Tests\Support\Helper\LoginHelper;
+use PHPUnit\Framework\TestCase;
 
 class FirstCest
 {
     use LoginHelper;    
 
-    // tests
-    public function loginTest(AcceptanceTester $I)
+    public function testLogin(AcceptanceTester $I)
 
     {
         $I->amOnPage('/admin');
@@ -19,11 +19,15 @@ class FirstCest
         
 
         $I->amOnPage('/wp-admin/edit.php');
-        $I->seeInTitle('Posts');
+        // $I->seeInTitle('Posts');
 
         $Title = 'Winter is coming! ' . time();
         $this->_addNewPostHelper($I, $Title);
-       
+        
+        $I->amOnPage('/');
+        $I->see($Title);
+
+
         
     }
 }

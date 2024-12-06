@@ -35,16 +35,8 @@ trait LoginHelper
         $I->waitForElement($this->title, 10);
         $I->fillField($this->title, $title);
 
-        $locator = 'div.is-root-container p[contenteditable="true"]';
-        // Use executeJS to send text to the contenteditable element
-$I->executeJS("
-const element = document.querySelector('$locator');
-if (element) {
-    element.innerHTML = 'Your text goes here'; // Set the inner HTML
-    const event = new Event('input', { bubbles: true });
-    element.dispatchEvent(event); // Trigger input event to mimic user interaction
-}
-");
+        $I->click('p[role="button"]');
+        $I->fillfield('p[role="document"]',  "When winter comes, the lone wolf dies but the pack survives");
 
         $I->switchToIFrame();
 

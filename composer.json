@@ -9,7 +9,8 @@
         "codeception/module-db": "^3.1",
         "codeception/module-webdriver": "^4.0",
         "testomatio/list-tests": "^0.2.5",
-        "testomatio/reporter": "^1.0"
+        "testomatio/reporter": "^1.0",
+        "phpunit/php-code-coverage": "^11.0"
 
     },
     

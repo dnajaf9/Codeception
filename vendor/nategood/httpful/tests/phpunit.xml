@@ -17,9 +17,15 @@
     <env name="http_proxy" value=""/>
   </php>
   <logging/>
+  
   <source>
     <include>
       <directory suffix=".php">../src</directory>
     </include>
   </source>
+
+  <logging>
+<log type="coverage-html" target="./tests/_output/HTMLReport"/>
+</logging>
+
 </phpunit>

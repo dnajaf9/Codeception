@@ -12,9 +12,7 @@ modules:
             port: '4444'   
             browser: chrome
         
-parameters:
-    username: 'admin'
-    password: 'sh43YJ7OmfrQElqIFlNX2WVB'
+        
 
 
         
