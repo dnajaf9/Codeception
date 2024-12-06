@@ -1,7 +1,6 @@
 <?php
 
 namespace Tests\Support\Helper;
-use Tests\Support\AcceptanceTester;
 
 trait LoginHelper
 
@@ -15,29 +14,28 @@ trait LoginHelper
     protected $title = ['css' => 'h1.editor-post-title__input'];
 
 
-    public function login(AcceptanceTester $I, $username, $password)
+    public function _loginHelper($I, $username, $password)
     {
-
-        $I->see('Username or Email Address');
-        
+        $I->amOnPage('/admin');
+        $I->see('Username or Email Address');  
         $I->fillField($this->usernameField, $username);
         $I->fillField($this->passwordField, $password);
         $I->click($this->loginButton);
-
-        $I->see('Dashboard');
        
     }
 
 
-    public function addNewPost(AcceptanceTester $I, $title )
+    public function _addNewPostHelper($I, $title )
     {
-        $I->click('Add New Post');
+        $I->click(['css'=>'a.page-title-action']);
         $I->seeInTitle('Add New Post');
         $I->wait(3);
 
         $I->switchToIFrame('editor-canvas');
         $I->waitForElement($this->title, 10);
         $I->fillField($this->title, $title);
+        
+
         
 
         // $I->switchToIFrame(); // Switch back from the iframe
@@ -56,15 +54,12 @@ if (element) {
 }
 ");
 
-
-        // $I->click('.block-editor-rich-text__editable.rich-text');
-        // $I->fillField('.block-editor-rich-text__editable.rich-text', "Post content");
+        $I->switchToIFrame();
 
         $I->click('//button[@type="button" and text()="Publish" and @aria-expanded="false"]');
-        $I->wait(3);
-        // $I->switchToIFrame();
         $I->click('div[class="editor-post-publish-panel__header-publish-button"] button[type="button"]');
-        $I->wait(3);
+
+        $I->waitForText('Post published', 10);
 
     }
 

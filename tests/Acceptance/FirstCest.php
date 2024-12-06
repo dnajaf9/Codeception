@@ -14,7 +14,7 @@ class FirstCest
 
     {
         $I->amOnPage('/admin');
-        $this->login($I, 'admin', 'sh43YJ7OmfrQElqIFlNX2WVB');
+        $this->_loginHelper($I, 'admin', 'sh43YJ7OmfrQElqIFlNX2WVB');
         $I->see('Dashboard');
         
 
@@ -22,7 +22,7 @@ class FirstCest
         $I->seeInTitle('Posts');
 
         $Title = 'Winter is coming! ' . time();
-        $this->addNewPost($I, $Title);
+        $this->_addNewPostHelper($I, $Title);
        
         
     }
