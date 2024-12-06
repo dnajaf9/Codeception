@@ -10,6 +10,7 @@
         "codeception/module-webdriver": "^4.0",
         "testomatio/list-tests": "^0.2.5",
         "testomatio/reporter": "^1.0"
+
     },
     
     "license": "proprietary"
